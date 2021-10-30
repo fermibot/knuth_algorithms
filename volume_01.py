@@ -65,5 +65,15 @@ def vol_01_exercise_01_01_008(r: int):
         print(n3_sum, n2_sum, n3_sum == n2_sum)
 
 
+def vol_01_exercise_01_01_011(r: int):
+    for n in range(1, r + 1):
+        print(n)
+        sum_x = 0
+        for i in range(n + 1):
+            print(i)
+            sum_x += ((-1) ** i)((2 * i + 1) ** 3) / ((2 * i + 1) ** 4 + 4)
+        print(sum_x)
+
+
 if __name__ == '__main__':
-    pass
+    vol_01_exercise_01_01_011(10)
